@@ -85,15 +85,13 @@ environment {
                echo '<--------------- Docker Publish Ended --------------->'  
             }
         }
-    stage(" Deploy ") {
+     stage(" Deploy ") {
        steps {
          script {
             sh './deploy.sh'
          }
        }
      }
-
-    }
-
+    } 
    }
 } 
